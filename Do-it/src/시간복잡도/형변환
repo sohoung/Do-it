@@ -14,3 +14,22 @@ short s = Short.parseShort(sNum);
 short s = Short.valueOf(sNum);
 
 이런 형식으로 String형에서 숫자형인 int,long,float,double,short형으로 변환을 할 수 있다.
+또한 숫자형에서 String형으로 변환을 할 수 있다.
+
+숫자형(int,long,short,double,float) -> String형
+int i = 1234;
+String s = String.valueOf(i);
+String s = Integer.toString(i);
+double d = 1.23;
+String s = String.valueOf(d);
+String s = Double.toString(d);
+float f = (float)1.23;
+String s = String.valueOf(f);
+String s = Float.toString(f);
+long l = 1234;
+String s = String.valueOf(l);
+String s = Long.toString(l);
+short sh = 1234;
+String s = String.valueOf(sh);
+String s = Short.toString(sh);
+
