@@ -1,0 +1,16 @@
+자바에서의 형 변환
+형 변환은 자주 사용한느 기술이다. 형 변환 관련 함수들을 자유롭게 사용할 수 있도록 미리 연습하는 것이 좋다.
+String형 -> 숫자형(int,long,double,float,short)
+String sNum = "1234"
+int i1 = Integer.parseInt(sNum);
+int i2 = Integer.valueOf(sNum);
+double d = Double.parseDouble(sNum);
+double d = Double.valueOf(sNum);
+float f = Float.parseFloat(sNum);
+float f = Float,valueOf(sNum);
+long l = Long.parseLong(sNum);
+long l = Long.valueOf(sNum);
+short s = Short.parseShort(sNum);
+short s = Short.valueOf(sNum);
+
+이런 형식으로 String형에서 숫자형인 int,long,float,double,short형으로 변환을 할 수 있다.
