@@ -13,11 +13,11 @@ import java.util.Scanner;
 //           1
 public class 구간합 {
     public static void main(String[] args) {
-        구간합 t= new 구간합();
+        구간합 t = new 구간합();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();  // 입력받을 숫자의 갯수
         int m = sc.nextInt();  // 테스트 갯수
-        int[] sum = new int[n+1];  // 배열의 합 배열
+        int[] sum = new int[n+1];  // 배열의 구간 합 배열
         int[] arr = new int[n+1];  // 입력받을 숫자에 의한 배열크기 동적 할당
         for(int i = 1; i <= n; i++) {  // for문으로 배열에 값 입력
             arr[i] = sc.nextInt();
