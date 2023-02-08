@@ -14,12 +14,11 @@ public class DNA {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
+        int answer = 0;
+        int[] check = new int[m];  // 슬라이딩 윈도우의 범위
         String str = sc.next();
         char[] c = str.toCharArray();
-        int[] DNA = new int[4];
-        for(int i = 0; i < DNA.length; i++) {
-            DNA[i] = sc.nextInt();
-        }
         
+
     }
 }
