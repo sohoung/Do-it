@@ -38,10 +38,10 @@ public class DNA {
                 checkSeceret++;      // checkseceret를 1증가시켜준다.
             }
         }
-        for (int i = 0; i < p; i++) {
+        for (int i = 0; i < p; i++) {  // 처음에 p 길이만큼 ADD 함수를 동작한다.
             ADD(a[i]);
         }
-        if (checkSeceret == 4) {
+        if (checkSeceret == 4) { // 처음에 p 길이만큼 ADD한 결과가 checkSeceret이 4이면 처음에 한 경우의 수가 비밀번호가 되는 경우이므로 result 값을 1증가시켜준다.
             result++;
         }
         for (int i = p; i < s; i++) {
