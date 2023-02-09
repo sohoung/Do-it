@@ -46,7 +46,9 @@ public class DNA {
         }
         for (int i = p; i < s; i++) {
             int j = i - p;
-            ADD(a[i]);
+            // 여기서 j는 슬라이딩 윈도우 크기의 맨 처음 인덱스를 의미하고 i는 마지막 인덱스를 의미한다. 즉 i가 1씩 커지면 j도 따라서 커지는 영향을 받으므로
+            // 슬라이딩 윈도우의 크기를 유지하면서 갈 수 있다.
+            ADD(a[i]);  // 슬라이딩 윈도우를 사용하므로 맨 처음에 a[i] ~ a[p-1]까지 ADD해주었으므로 이제 a[p]를 넣어주고 a[i-p]인 처음 인덱스 값을 빼준다.
             Remove(a[j]);
             if (checkSeceret == 4) {
                 result++;
@@ -93,6 +95,8 @@ public class DNA {
                 }
                 myarr[0]--;
                 break;
+                // if문을 먼저 하는 이유는 myarr의 값이 checkarr의 값과 같으면 비밀번호를 충족한 조건이 이제는 충족하지 않기 때문에 checkSeceret을 빼주어야 한다.
+                // 그것을 먼저 검증하기 위해서 if 조건문을 먼저 해준다.
             case 'C':
                 if (myarr[1] == checkarr[1]) {
                     checkSeceret--;
