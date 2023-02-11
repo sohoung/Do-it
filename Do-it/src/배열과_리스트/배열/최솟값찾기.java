@@ -6,9 +6,20 @@ package 배열과_리스트.배열;
 //           1 5 2 3 6 2 3 7 3 5 2 6
 // 출력 예시 : 1 1 1 2 2 2 2 2 3 3 2 2
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.Scanner;
+import java.util.function.IntUnaryOperator;
+
 public class 최솟값찾기 {
+    public static final Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
         최솟값찾기 t = new 최솟값찾기();
+        BufferedReader br = new BufferedReader((new InputStreamReader(System.in)));
+        BufferedWriter bw = new BufferedWriter((new OutputStreamWriter(System.out)));
         
     }
 }
