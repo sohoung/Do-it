@@ -26,6 +26,7 @@ public class 최솟값찾기 {
             while(!mydeque.isEmpty() && mydeque.getLast().value > now) {  // 덱의 마지막 위치에서부터 현재 값보다 큰 값은 덱에서 제거
                 mydeque.removeLast();
             }
+            // 여기서 중요한 것은 새로운 값이 들어올 때마다 정렬을 하는 대신 현재 수보다 큰 값을 덱에서 제거해 정렬에 필요한 시간 복잡도를 줄인다.
             mydeque.addLast(new Node(now,i));  // 새로운 데이터 가져오기
             if(mydeque.getFirst().index <= i - m){  // 슬라이딩 윈도우의 범위를 벗어나는 인덱스 값은 제거
                 mydeque.removeFirst();
