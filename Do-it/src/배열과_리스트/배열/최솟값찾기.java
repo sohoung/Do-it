@@ -20,6 +20,6 @@ public class 최솟값찾기 {
         최솟값찾기 t = new 최솟값찾기();
         BufferedReader br = new BufferedReader((new InputStreamReader(System.in)));
         BufferedWriter bw = new BufferedWriter((new OutputStreamWriter(System.out)));
-        
+
     }
 }
