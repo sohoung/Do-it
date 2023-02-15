@@ -36,7 +36,7 @@ public class 최솟값찾기 {
             bw.write(mydeque.getFirst().value + " ");
         }
         // 알고리즘
-        
+
         bw.flush();
         bw.close();
     }
