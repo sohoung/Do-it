@@ -36,7 +36,7 @@ public class 최솟값찾기 {
         bw.flush();
         bw.close();
     }
-    static class Node {
+    private static class Node {
         public int value;
         public int index;
         Node(int value, int index) {
