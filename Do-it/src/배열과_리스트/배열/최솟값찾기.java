@@ -22,6 +22,7 @@ public class 최솟값찾기 {
         st = new StringTokenizer(br.readLine());
         Deque<Node> mydeque = new LinkedList<>();  // Deque 객체 생성
 
+        // 알고리즘
         for(int i = 0; i < n; i++) {
             int now = Integer.parseInt(st.nextToken());  // 주어진 숫자 데이터를 가지는 리스트
             while(!mydeque.isEmpty() && mydeque.getLast().value > now) {  // 덱의 마지막 위치에서부터 현재 값보다 큰 값은 덱에서 제거
@@ -34,7 +35,8 @@ public class 최솟값찾기 {
             }
             bw.write(mydeque.getFirst().value + " ");
         }
-
+        // 알고리즘
+        
         bw.flush();
         bw.close();
     }
