@@ -27,9 +27,9 @@ public class DNA {
         int p = Integer.parseInt(st.nextToken());  // 부분 문자열 길이
         int result = 0;  // 결과 값
         char[] a = new char[s];  // 문자열 데이터
-        checkarr = new int[4];  // 비밀번호 체크 배열
-        myarr = new int[4];     // 현재 상태 배열
-        checkSeceret = 0;       // 몇 개의 문자와 관련된 갯수를 충족했는지 판단하는 변수
+        checkarr = new int[4];   // 비밀번호 체크 배열
+        myarr = new int[4];      // 현재 상태 배열
+        checkSeceret = 0;        // 몇 개의 문자와 관련된 갯수를 충족했는지 판단하는 변수
         a = bf.readLine().toCharArray();          // 문자열을 char 배열로 만들어준다.
         st = new StringTokenizer(bf.readLine());
         for (int i = 0; i < 4; i++) {
