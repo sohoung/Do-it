@@ -1,5 +1,5 @@
 package 배열과_리스트.배열;
-import java.util.ArrayList;
+
 import java.util.Scanner;
 
 // 설명 : n*n개의 수가 n*n 크기의 표에 채워져있다. 표 안의 수 중(x1,y1)에서 (x2,y2)까지의 합을 구하는 프로그램을 작성하세요
